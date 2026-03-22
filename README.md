@@ -1,22 +1,87 @@
-## 🎬 Netflix Movie Data Analysis
+# 🎬 Netflix Movie Data Analysis
 
-### About
-Analyzed 9800+ movies from TMDB dataset to uncover 
-trends in genres, popularity and ratings.
+## 📌 Overview
+Analyzed a dataset of 9800+ movies to help companies 
+like Netflix make informed business decisions using 
+data-driven insights.
 
-### Questions Answered
-1. What is the most frequent genre?
+## ❓ Business Questions Answered
+1. What is the most frequent genre of movies?
 2. Which genre has the highest votes?
-3. Which movie has the highest/lowest popularity?
-4. Which year had the most movie releases?
+3. Which movie has the highest popularity & what is its genre?
+4. Which movie has the lowest popularity & what is its genre?
+5. Which year had the most movies released?
+6. Which genre has the highest average vote count?
+7. Which genre has the highest average popularity score?
 
-### Key Findings
-- Drama is the most common genre (14% of all movies)
-- Spider-Man: No Way Home had the highest popularity score
-- 2020 had the most movie releases in the dataset
+## 📊 Key Findings
+- 🎭 **Drama** is the most frequent genre (14% of all movies)
+- 🏆 **Spider-Man: No Way Home** has the highest popularity score
+  with genres Action, Adventure & Science Fiction
+- 📉 **The United States vs. Billie Holiday** has the lowest 
+  popularity with genres Music, Drama & History
+- 📅 **2020** had the highest number of movie releases
+- ⭐ **Drama** genre dominates in fan votes
+- 🔥 **Action** genre has the highest average popularity score
 
-### Tools Used
-- Python, Pandas, Numpy
-- Matplotlib, Seaborn
-### Dataset
-TMDB Movie Dataset from Kaggle
+## 🛠️ Tools & Technologies
+| Tool | Purpose |
+|------|---------|
+| Python | Core programming language |
+| Pandas | Data cleaning & manipulation |
+| Numpy | Numerical operations |
+| Matplotlib | Data visualization |
+| Seaborn | Statistical charts |
+| Jupyter Notebook | Development environment |
+
+## 📁 Project Structure
+```
+netflix-movie-analysis/
+│
+├── data/
+│   └── mymoviedb.csv
+├── Movie analysis.ipynb
+└── README.md
+```
+
+## 🚀 How to Run
+1. Clone the repository
+```bash
+git clone https://github.com/Codewithkhushi-arch/netflix-movie-analysis.git
+```
+
+2. Install dependencies
+```bash
+pip install pandas numpy matplotlib seaborn
+```
+
+3. Open Jupyter Notebook
+```bash
+jupyter notebook
+```
+
+4. Run `netflix_movie_analysis.ipynb` top to bottom
+
+## 📈 Visualizations Include
+- Genre distribution bar chart
+- Votes distribution chart
+- Average vote count by genre
+- Top 10 most popular movies bar chart
+- Movies released per year histogram
+- Average popularity by genre
+- Correlation heatmap (Popularity vs Vote Count)
+
+## 🧹 Data Cleaning Steps
+- Converted Release_Date to year format
+- Dropped irrelevant columns (Overview, Original_Language, Poster_Url)
+- Categorized Vote_Average into 4 groups (not_popular, below_avg, average, popular)
+- Split multi-genre rows and exploded into single genre per row
+- Handled missing values and duplicates
+
+## 📚 Dataset
+TMDB Movie Dataset — 9800+ movies with information
+on genre, popularity, vote count and release date.
+
+## 👩‍💻 Author
+**Khushi** — Aspiring Data Scientist
+- GitHub: [@Codewithkhushi-arch](https://github.com/Codewithkhushi-arch)
